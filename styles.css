@@ -64,7 +64,7 @@ nav .header-name {
 nav .directory-list {
     display: flex;
     align-items: center;
-    margin-right: max(10%, 30px);
+    margin-right: min(-10%, -30px);
     
     /* border: 2px red;
     border-style: solid;

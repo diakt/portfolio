@@ -1,0 +1,365 @@
+body {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    margin: 0px 0px 0px 0px;
+
+    font-family: sans-serif;
+    
+
+}
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+header {
+    display: flex;
+    align-items: center; /* center to fix*/
+
+    height: 5%;
+    width: 100%;
+    position: fixed;
+    top:0;
+
+    border: black;
+    border-style: solid;
+    background-color: #B4B2CC;
+
+
+    
+
+    
+}
+
+nav {
+    top: 0;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px auto 0px auto;
+
+
+    /* border: 1px red;
+    border-style: solid;  */
+    
+   
+}
+
+
+nav .header-name {
+    display: inline-block;
+    color: black; /*note that color is text color */
+    margin-left: clamp(3%, 30px, 5%);
+    /* border: 3px purple;
+    border-style: solid; */
+    
+}
+
+
+
+nav .directory-list {
+    display: flex;
+
+    align-items: center;
+    margin-right: min(-10%, -30px);
+    
+    /* border: 2px red;
+    border-style: solid; */
+
+}
+
+nav .directory-item {
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0px 5px 0px 5px;
+    
+
+    /* border: 1px blue;
+    border-style: solid; */
+}
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+.image-separator {
+    /* margin-top: 200px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; 
+    border: 1px #464B73;
+    border-style: solid;
+}
+
+.trans-image {
+    display: block;
+    max-width: 100%;
+    flex-grow: 1;
+    margin-top: 2%;
+    /* margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px; */
+    /* max-width: 100%; */
+
+    
+
+}
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* flex-wrap: nowrap; */
+    
+    max-width: 100%;
+
+
+    border: blue;
+    border-style: solid;
+}
+
+
+/* LEFT LEFTLEFTLEFTLEFTLEFTLEFTLEFTLEFTLEFTLEFTLEFTLEFTLEFTLEFTLEFTLEFT*/
+
+
+.left-child {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    flex-shrink: 2;
+
+    /* border: 1px red;
+    border-style: solid; */
+}
+
+
+.left-child ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border: 1px red;
+    border-style: solid;
+
+    margin: 1vh;
+    padding: 0px 0px 0px 0px;
+
+    
+
+}
+
+.left-child .left-child-image {
+    display: flex;
+    max-width: 95%;
+
+
+    /* border: 1px black;
+    border-style: solid; */
+}
+
+.left-child .left-child-image-captions {
+    display: flex;
+    max-width: 90%;
+    text-align: center;
+    margin-top: 0px;
+
+    /* border: 1px black;
+    border-style: solid; */
+}
+
+
+
+
+
+
+/* MIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLE */
+
+.mid-child {
+    display: inline-block;
+    width: 60%;
+    font-size: 14px;
+
+    background-color: #b2cacc;
+    /* background-color: #b2bdcc; */
+
+    border: 1px red;
+    border-style: solid;
+
+    margin: 1vh;
+}
+
+
+.mid-child .innertext {
+    margin: 2%;
+
+}
+
+
+/* RIGHTRIGHTRIGHTRIGHTRIGHTRIGHTRIGHTRIGHTRIGHTRIGHTRIGHTRIGHTRIGHTRIGHTRIGHTRIGHTRIGHT */
+
+
+.right-child {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    flex-shrink: 2;
+
+    /* border: 1px red;
+    border-style: solid; */
+}
+
+.right-child ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border: 1px red;
+    border-style: solid;
+
+    margin: 1vh;
+    padding: 0px 0px 0px 0px;
+
+    
+
+}
+
+.right-child .right-child-image {
+    display: flex;
+    max-width: 90%;
+
+
+    /* border: 1px red;
+    border-style: solid; */
+}
+
+.right-child .right-child-image-captions {
+    display: flex;
+    max-width: 90%;
+    text-align: center;
+    margin-top: 0px;
+
+    /* border: 1px red;
+    border-style: solid; */
+}
+
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+footer{
+    display: flex;
+    align-items: center;
+
+    position: fixed;        
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    
+    background-color: #B4B2CC;
+    border: black;
+    border-style: solid;
+}
+
+
+.footer-directory-list {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+      
+}
+
+
+
+
+
+
+
+
+
+
+.footer-directory-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+    margin-right: min(5%, 30px);
+    /* border: 1px blue;
+    border-style: solid;    */
+}
+
+
+.footer-directory-image {
+    margin: 0px 0px 0px 0px;
+    margin-left: min(5%, 30px);
+
+    /* border: 1px red;
+    border-style: solid; */
+    
+}
+
+
+
+
+
+#github-logo {
+    width: 2.6%;
+    min-width: 31px; /* Need to change for if height decreases*/
+    max-width: 40px;
+}
+
+#linkedin-logo {
+    width: 2.6%;
+    min-width: 31px; /* Need to change for if height decreases*/
+    max-width: 40px;
+}
+
+#twitter-logo {
+    width: 2.9%;
+    min-width: 35px; /* Need to change for if height decreases*/
+    max-width: 40px;
+}
+
+#spotify-logo {
+    width: 2.7%;
+    min-width: 35px; /* Need to change for if height decreases*/
+    
+    /* max-width: 40px; */
+}
+
+
+#scihub-logo {
+    width: 2.7%;
+    min-width: 37px; /* Need to change for if height decreases*/
+    margin-top: 2px;
+    margin-left: min(5%, 25px)
+    /* max-width: 40px; */
+    /* border: 1px red;
+    border-style: dashed; */
+}
+
+
+
+
+
+
+ 
