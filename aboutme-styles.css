@@ -7,7 +7,7 @@ body {
     margin: 0px 0px 0px 0px;
 
     font-family: sans-serif;
-    overflow: hidden;
+    background-color: #E6C59C;
     
 
 }
@@ -23,7 +23,6 @@ header {
     width: 100%;
     position: fixed;
     top:0;
-    background: #fff;
 
     border: black;
     border-style: solid;
@@ -64,23 +63,29 @@ nav .header-name {
 
 nav .directory-list {
     display: flex;
+
     align-items: center;
     margin-right: min(-10%, -30px);
     
     /* border: 2px red;
-    border-style: solid;
-    flex-shrink: .3; */
+    border-style: solid; */
+
 }
 
 nav .directory-item {
     color: black;
     display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     margin: 0px 5px 0px 5px;
     
 
     /* border: 1px blue;
     border-style: solid; */
 }
+
+
+
 
 /* ---------------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
@@ -99,6 +104,7 @@ nav .directory-item {
     display: block;
     max-width: 100%;
     flex-grow: 1;
+    margin-top: 2%;
     /* margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px; */
     /* max-width: 100%; */
@@ -122,71 +128,180 @@ nav .directory-item {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* ---------------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
 
 main {
-    /* margin-top: 3%; */
-    padding:0px 0px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
+    
+    max-width: 100%;
+    margin-bottom: 5vh;
 
 
-    /* border: blue;
-    border-style: solid; */
+    border: black;
+    border-style: solid;
 }
 
-
-/* .left-child {
-    display: inline-block;
-    width: 20%;
-    height: 100%;
-    flex-shrink: 2;
-
-    border:  green;
-    border-style: solid;
-} */
-
-
-
+/* MIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLE */
 
 .mid-child {
     display: inline-block;
-    width: 66%;
+    width: 60%;
+    font-size: 16px;
 
     background-color: #b2cacc;
-    background-color: #b2bdcc;
-    background-color: #ccc1b2;
-    background-color: #ccb4b2;
-    background-color: #C18D83;
-    
+    /* background-color: #b2bdcc; */
+
+    border: black;
+    border-style: solid;
+
+    /* height: 102.7vh; */
+    margin: 1vh;
+}
 
 
-    /* border: green;
+.mid-child .innertext {
+    margin: 2%;
+
+}
+
+
+
+/* LEFTRIGHTLEFTRIGHTLEFTRIGHTLEFTRIGHTLEFTRIGHTLEFTRIGHTLEFTRIGHTLEFTRIGHTLEFTRIGHTLEFTRIGHTLEFTRIGHT*/
+
+.left-child, .right-child{
+    display: flex;
+    width: 20%;
+    height: 90vh;
+    flex-shrink: 2;
+    font-size: 14px;
+
+    /* border: 1px red;
     border-style: solid; */
 }
 
-/* .right-child {
-    display: inline-block;
-    width: 20%;
-    height: 100%;
-    flex-shrink: 2;
+.left-child ul, .right-child ul {
+    /* background-color: #E6C59C; */
+    /* border: black;
+    border-style: solid; */
 
-    border: green;
+    margin: 1vh;
+    padding: 0px 0px 0px 0px;
+
+    /* height: 90vh; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.left-child .left-child-image, .right-child .right-child-image {
+    display: flex;
+
+    max-width: 90%;
+    /* max-height: 40%; */
+
+
+    border: black;
     border-style: solid;
-} */
+}
+
+.left-child #encapsulation, .right-child #encapsulation {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 1vh;
+    height: 70vh;
+    max-width: 90%;
+
+    background-color: #b2cacc;
+    border: black;
+    border-style: solid;
+}
+
+.left-child .left-child-image-captions, .right-child .right-child-image-captions {
+    display: flex;
+    max-width: 90%;
+    text-align: left;
+    margin-top: 1vh;
+
+
+    
+    /* border: black;
+    border-style: solid; */
+}
 
 
 
 
 
 
-/* ---------------------------------------------------------------- */
-/* ---------------------------------------------------------------- */
-/* ---------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 footer{
     display: flex;
