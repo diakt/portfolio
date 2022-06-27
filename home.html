@@ -5,46 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home-styles.css">
-    <title>Who's on first?</title>
+    <title>Home</title>
 </head>
 <body>
     <header>
-        <nav>
-            <a class="directory-item" href= "home.html" id="directory-item-my-name"><h2>Gavin Southerland</h2></a>
-                <a class = "directory-item" href= "aboutme.html" id = "directory-item-aboutme">About me</a>
-                <a class = "directory-item" href= "interests.html" id = "directory-item-interests">Interests</a>
-                <a class = "directory-item" href= "aboutme.html" id = "directory-item-projects">Projects and problems</a>
-                <a class = "directory-item" href= "https://drive.google.com/file/d/1l0iC3prYQL5YyKeUDYWLwUfF0c0o9-5k/view?usp=sharing" id = "directory-item-resume">Resume</a>
+        <nav class="header-directory">
+            <a class= "directory-item" href= "home.html" id="directory-item-my-name">Gavin Southerland</a>
+            <a class = "directory-item" href= "aboutme.html" id = "directory-item-aboutme">About me</a>
+            <a class = "directory-item" href= "interests.html" id = "directory-item-interests">Interests</a>
+            <a class = "directory-item" href= "projects.html" id = "directory-item-projects">Projects</a>
+            <a class = "directory-item" target = "_blank" href= "https://drive.google.com/file/d/1l0iC3prYQL5YyKeUDYWLwUfF0c0o9-5k/view?usp=sharing" id = "directory-item-resume">Resume</a>
         </nav>
         
     </header>
 
-    <div class = "image-separator">
-        <!-- <img class = "trans-image" alt="Picture of ugly boy and happy dog" src="/images/eli-event-site copy 2.jpg" > -->
-        <!-- <img class = "trans-image" alt="Picture of Mount Hood, near Hood River, Oregon" src="/images/hood-river-valley.jpeg" > -->
-        
-    </div>
     
-
+    
     <main>
-        <div class = "mid-child">
-            <h2 class = "innertext"> Well, hello.</h2>
-            <p class = "innertext">My name is Gavin. I'm a bit of a mutt, but I'd say I'm from Washington state. I’m a mathematics major at Columbia graduating in the summer of '22. I'm more of an analyst than an algebraist, more of a probabilist than an analyst, and more of a fool than a probabilist. I rowed for a while and fought wildland fire for a while. My favorite authors are Bulgakov, Pynchon, Kafka, Solzhenitsyn, and McCarthy, although maybe not in that order.</p>
-            <p class = "innertext">I was born on Vancouver Island, Canada, and moved to Vancouver, Washington when I was four years old. I went back to Vancouver Island for high school, then worked/taught for a year  in Canberra, Australia. After that, I worked in the diabetes research group at B.C. Children’s Hospital in Vancouver, Canada for a year before heading to Columbia University. A lot of Vancouvers.</p>
-            <p class = "innertext">I row at Columbia and won a national championship on the lightweight rowing team. I’ve worked irregularly throughout school and held a couple of on-campus leadership positions, though nothing too noteworthy. Near the end of my junior year, the pandemic started, and I decided to <s>drop out</s> wildland firefight out of PatRick Environmental’s base in Ellensburg, Washington, which is about a hundred miles ESE of Seattle. I enjoyed the work immensely. After the fire season ended, I worked as a contact tracer, and later interned at Zwift in a research role the summer before returning to Columbia to study for my senior year.</p>
-            <p class = "innertext">I’m deeply interested in environmental hazards and risk management. Wildfire will worsen by several orders of magnitude over the next fifty years in the Pacific Northwest and Russia. I enjoy using statistical approaches in combination with significant assumption hunting to examine risk in maybe a systems theoretic context, and this passion has developed in tandem with my love for mathematics and computer science.</p>
-            <p class = "innertext">If you have something to spare, I’ve attached a donation link in the bottom-right footer to contribute to Alexandra Elbakyan’s sci-hub project, which strives to ensure free open-source access to scientific research. It is difficult to overstate the importance of sci-hub in the fight to challenge current paradigms of pay-to-play knowledge access, and Elbakyan’s work has been sensational. I strongly advise that you visit sci-hub and see what it has to offer.</p>            
-            
-            <!-- <p class = "innertext">“Without turning, the pharmacist answered that he liked books like The Metamorphosis, Bartleby, A Simple Heart, A Christmas Carol. And then he said that he was reading Capote's Breakfast at Tiffany's. Leaving aside the fact that A Simple Heart and A Christmas Carol were stories, not books, there was something revelatory about the taste of this bookish young pharmacist, who ... clearly and inarguably preferred minor works to major ones. He chose The Metamorphosis over The Trial, he chose Bartleby over Moby Dick, he chose A Simple Heart over Bouvard and Pecouchet, and A Christmas Carol over A Tale of Two Cities or The Pickwick Papers. What a sad paradox, thought Amalfitano. Now even bookish pharmacists are afraid to take on the great, imperfect, torrential works, books that blaze a path into the unknown. They choose the perfect exercises of the great masters. Or what amounts to the same thing: they want to watch the great masters spar, but they have no interest in real combat, when the great masters struggle against that something, that something that terrifies us all, that something that cows us and spurs us on, amid blood and mortal wounds and stench.”</p> -->
-            
-        </div>
+        <!-- <img class = "main-image" alt="Picture of ugly boy and happy dog" src="/images/eli-event-site.jpg" > -->
+        <img class = "main-image" alt="Picture of people yelling loudly after winning a rowing regatta" id = "Winning "alt="Winning" src="/images/ira-win.jpg" >
+        <!-- <img class = "main-image" alt="Picture of Mount Hood, near Hood River, Oregon" src="/images/hood-river-valley.jpeg" > -->
+        <h2 class = "main-text"> Welcome to my page.</h2>
     </main>    
 
+
+
+
+
+
+
+
+
     <footer>
-        <ul class = "footer-directory-list">
-        </ul> 
-        
-        
         <ul class = "footer-directory-icons">
             <img class = "footer-directory-image"src="/logos/github.png" id = "github-logo"alt = "GitHub logo. Click to see my GitHub account."></li>
             <img class = "footer-directory-image"src="/logos/linkedin3.png" id = "linkedin-logo"alt ="LinkedIn logo. Click to see my LinkedIn. Yuck."></li>
@@ -53,6 +45,6 @@
             <img class = "footer-directory-image"src="/logos/scihub3.png" id = "scihub-logo"alt = "Donate to a good cause."></li>
         </ul>        
     </footer>
-    <script src="home-script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,5 +1,9 @@
 So I may have gone way too far on this before declaring my goals and approach. I want something clean, but we can calm down a little.
 
+Color framing:
+https://i.pinimg.com/originals/1a/00/9d/1a009df9e55f37a70b3699572494d0da.png
+
+
 MVP - Minimum Viable Product
 
 Your application must meet these requirements:

@@ -1,5 +1,6 @@
 body {
     max-width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,55 +21,59 @@ header {
     display: flex;
     align-items: center; /* center to fix*/
 
-    height: 5vh;
-
-    /* border: black;
+    height: 5vh;   
+    border: black;
     border-style: solid;
-    background-color: #B4B2CC; */
-    
-
-
-    
-
-    
 }
 
 nav {
+    width: 100%;
     height: 100%;
+
     display: flex;
     justify-content:flex-start;
     align-items: flex-end;
     flex-direction: row;
-    width: 100%;
 
 
-    color: white;
-    /* border: 1px red;
-    border-style: solid;  */
-    
-   
+    color: white; 
+    /* border: red;
+    border-style: dashed; */
 }
 
-
-
 nav a {
+    display: flex;
+    flex-wrap: nowrap;
     text-decoration: none;
     color: white;
-    margin: 0vh 2ch;
+
+    margin: 0 2%;
+    padding: 0 auto;
+    font-size: clamp(2em, normal, 2vw);
+    font-size: 1em;
+    flex-shrink: 3;
+
     
+    /* border: green;
+    border-style:groove; */
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-#directory-item-my-name h2 {
-    /* border: blue;
-    border-style: dashed; */
-    margin-bottom: 0vh;
-    margin-right: 5ch;
-    padding-bottom: 0vh;
+#directory-item-my-name {
+    font-size: 20px;
+    /* margin-bottom: 0;
+    margin-right: 3vw; */
+    padding-bottom: 0;
+    margin-top: 0;
+
     
+}
+
+#directory-item-aboutme{
+    color:#996A84;
 }
 
 /* ---------------------------------------------------------------- */
@@ -76,29 +81,54 @@ nav a:hover {
 /* ---------------------------------------------------------------- */
 
 main {
+    margin-top: .5vh;
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    /* flex-wrap: nowrap; */
     
     max-width: 100%;
     margin-bottom: 5vh;
 
-    background-color: red;
     border: black;
+    /* border: blue; */
     border-style: solid;
+
+
+    /* background-color: #b2cacc; */
+    /* background-color: #549966; */
+    /* background-color: #996A84; */
+    /* background-color: #006E63; */
+    background-color: #549FA2;
+    
+    
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+
 }
 
+.mid-child, #encapsulation{ /* color only */
+    /* background-color: #E6C59C; */
+    /* background-color: #b2cacc; */
+    /* background-color: #BAEEBA; */
+    /* background-color: #766688; */
+    /* background-color: #b2cacc; */
+    /* background-color: #549966; */
+    background-color: #88BB88;
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+}
+
+
 /* MIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLE */
+
 
 .mid-child {
     display: inline-block;
     width: 60%;
     font-size: 16px;
 
-    background-color: #b2cacc;
-    /* background-color: #b2bdcc; */
+    
 
     border: black;
     border-style: solid;
@@ -113,6 +143,10 @@ main {
 
 }
 
+.thin-image {
+    display: none;
+    width: 90%;
+}
 
 
 /* LEFTRIGHTLEFTRIGHTLEFTRIGHTLEFTRIGHTLEFTRIGHTLEFTRIGHTLEFTRIGHTLEFTRIGHTLEFTRIGHTLEFTRIGHTLEFTRIGHT*/
@@ -120,19 +154,12 @@ main {
 .left-child, .right-child{
     display: flex;
     width: 20%;
-    height: 90vh;
-    flex-shrink: 2;
+    height: 70vh;
+    /* flex-shrink: 2; */
     font-size: 14px;
-
-    /* border: 1px red;
-    border-style: solid; */
 }
 
 .left-child ul, .right-child ul {
-    /* background-color: #E6C59C; */
-    /* border: black;
-    border-style: solid; */
-
     margin: 1vh;
     padding: 0px 0px 0px 0px;
 
@@ -161,10 +188,9 @@ main {
     justify-content: center;
     align-items: flex-start;
     margin-top: 1vh;
-    height: 70vh;
+    height: auto;
     max-width: 90%;
 
-    background-color: #b2cacc;
     border: black;
     border-style: solid;
 }
@@ -177,7 +203,7 @@ main {
 
 
     
-    /* border: black;
+    /* border: red;
     border-style: solid; */
 }
 
@@ -198,6 +224,7 @@ main {
 
 footer{
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     
 
@@ -206,18 +233,20 @@ footer{
     width: 80%;
     height: 5%;
     
-    background-color: #B4B2CC;
+
+    background-color: #996A84;
     border: black;
+    /* border: blue; */
     border-style: solid;
+   
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+
+    
 }
 
 
-.footer-directory-list {
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
-      
-}
+
 
 
 
@@ -229,19 +258,20 @@ footer{
 
 
 .footer-directory-icons {
+    width: max(350px, 30%);
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin: 0px 0px 0px 0px;
-    margin-right: min(5%, 30px);
+    margin-right: max(1.5%, 25px);
     /* border: 1px blue;
     border-style: solid;    */
 }
 
 
 .footer-directory-image {
-    margin: 0px 0px 0px 0px;
-    margin-left: min(5%, 30px);
+    margin: 0 min(3%, 20px);
+    /* margin-left: min(5%, 30px); */
 
     /* border: 1px red;
     border-style: solid; */
@@ -281,13 +311,73 @@ footer{
 #scihub-logo {
     width: 2.7%;
     min-width: 37px; /* Need to change for if height decreases*/
-    margin-top: 2px;
-    margin-left: min(5%, 25px)
+
+
     /* max-width: 40px; */
     /* border: 1px red;
     border-style: dashed; */
 }
 
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 734px) {
+    body {
+        max-width:100%;
+        align-items: center;
+        /* border: 1px red;
+        border-style: solid; */
+        
+    }
+    header {
+        /* background-color: orange; */
+        /* min-width: 500px; */
+        font-size: smaller;
+    }
+
+
+    main {
+        /* min-width: 500px; */
+
+    }
+    .left-child{
+        display: none;
+
+        
+    }
+    .right-child{
+        display: none;
+    }
+    .mid-child { /*the text item when things get small*/
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .thin-image {
+        display: block;
+        width: 90%;
+    
+
+    }
+    footer {
+        /* width: 80%; */
+    }
+    .footer-directory-icons {
+        margin-right: min(5%, 30px);
+
+    }
+    
+}
 
 
 
