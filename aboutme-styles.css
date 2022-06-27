@@ -343,10 +343,7 @@ footer{
     }
 
 
-    main {
-        /* min-width: 500px; */
 
-    }
     .left-child{
         display: none;
 
@@ -369,9 +366,7 @@ footer{
     
 
     }
-    footer {
-        /* width: 80%; */
-    }
+  
     .footer-directory-icons {
         margin-right: min(5%, 30px);
 
