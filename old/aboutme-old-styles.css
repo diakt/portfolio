@@ -7,25 +7,26 @@ body {
     margin: 0px 0px 0px 0px;
 
     font-family: sans-serif;
-    background-color: black;
+    background-color: #E6C59C;
+    
+
 }
 
 /* ---------------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
 header {
-    margin-top: 3vh;
-    
-    width: 80%;
     display: flex;
     align-items: center; /* center to fix*/
 
-    height: 5vh;
+    height: 5%;
+    width: 100%;
+    position: fixed;
+    top:0;
 
-    /* border: black;
+    border: black;
     border-style: solid;
-    background-color: #B4B2CC; */
-    
+    background-color: #B4B2CC;
 
 
     
@@ -34,15 +35,14 @@ header {
 }
 
 nav {
-    height: 100%;
+    top: 0;
     display: flex;
-    justify-content:flex-start;
-    align-items: flex-end;
+    justify-content:space-around;
     flex-direction: row;
     width: 100%;
+    margin: 0px auto 0px auto;
 
 
-    color: white;
     /* border: 1px red;
     border-style: solid;  */
     
@@ -50,33 +50,99 @@ nav {
 }
 
 
-
-nav a {
-    text-decoration: none;
-    color: white;
-    margin: 0vh 2ch;
+nav .header-name {
+    display: inline-block;
+    color: black; /*note that color is text color */
+    margin-left: clamp(3%, 30px, 5%);
+    /* border: 3px purple;
+    border-style: solid; */
     
 }
 
-nav a:hover {
-    text-decoration: underline;
+
+
+nav .directory-list {
+    display: flex;
+
+    align-items: center;
+    margin-right: min(-10%, -30px);
+    
+    /* border: 2px red;
+    border-style: solid; */
+
 }
 
-#directory-item-my-name h2 {
-    /* border: blue;
-    border-style: dashed; */
-    margin-bottom: 0vh;
-    margin-right: 5ch;
-    padding-bottom: 0vh;
+nav .directory-item {
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0px 5px 0px 5px;
     
+
+    /* border: 1px blue;
+    border-style: solid; */
 }
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+.image-separator {
+    /* margin-top: 200px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; 
+    border: 1px #464B73;
+    border-style: solid;
+}
+
+.trans-image {
+    display: block;
+    max-width: 100%;
+    flex-grow: 1;
+    margin-top: 2%;
+    /* margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px; */
+    /* max-width: 100%; */
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---------------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
 
 main {
-    width: 80%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -85,7 +151,7 @@ main {
     max-width: 100%;
     margin-bottom: 5vh;
 
-    background-color: red;
+
     border: black;
     border-style: solid;
 }
@@ -192,6 +258,47 @@ main {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -199,11 +306,10 @@ main {
 footer{
     display: flex;
     align-items: center;
-    
 
     position: fixed;        
     bottom: 0;
-    width: 80%;
+    width: 100%;
     height: 5%;
     
     background-color: #B4B2CC;

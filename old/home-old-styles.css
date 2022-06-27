@@ -5,9 +5,9 @@ body {
     align-items: center;
     flex-direction:column;
     margin: 0px 0px 0px 0px;
-
     font-family: sans-serif;
     overflow: hidden;
+
     
 
 }
@@ -86,26 +86,27 @@ nav .directory-item {
 /* ---------------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
 .image-separator {
-    /* margin-top: 200px; */
+    
     width: 100%;
     display: flex;
     justify-content: center;
+    align-content: flex-end;
     flex-wrap: nowrap; 
     border: 1px #464B73;
     border-style: solid;
+    margin-top: -5vh;
+    
 }
 
 .trans-image {
     display: block;
     max-width: 100%;
     flex-grow: 1;
-    /* margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px; */
-    /* max-width: 100%; */
+    
 
     
 
-}
+} 
 
 
 
@@ -127,7 +128,8 @@ nav .directory-item {
 /* ---------------------------------------------------------------- */
 
 main {
-    /* margin-top: 3%; */
+    width: 100%;
+    margin-top: 30vh; 
     padding:0px 0px 0px 0px;
     display: flex;
     justify-content: center;
@@ -140,7 +142,7 @@ main {
 }
 
 
-/* .left-child {
+.left-child {
     display: inline-block;
     width: 20%;
     height: 100%;
@@ -148,7 +150,7 @@ main {
 
     border:  green;
     border-style: solid;
-} */
+}
 
 
 
@@ -165,11 +167,11 @@ main {
     
 
 
-    /* border: green;
-    border-style: solid; */
+    border: green;
+    border-style: solid;
 }
 
-/* .right-child {
+.right-child {
     display: inline-block;
     width: 20%;
     height: 100%;
@@ -177,7 +179,7 @@ main {
 
     border: green;
     border-style: solid;
-} */
+}
 
 
 

@@ -5,8 +5,8 @@
 
 //header DOM objects
 const myName = document.getElementById("my-name");
-console.log(myName)
 const aboutMe = document.getElementById("directory-item-aboutme");
+const interests = document.getElementById("directory-item-interests")
 const resume = document.getElementById("directory-item-resume");
 const projects = document.getElementById("directory-item-projects");
 
@@ -15,6 +15,7 @@ const projects = document.getElementById("directory-item-projects");
 //header event listeners
 myName.addEventListener("click", function(){sameWindow("home.html")});
 aboutMe.addEventListener("click", function(){sameWindow("aboutme.html")});
+interests.addEventListener("click", function(){sameWindow("interests.html")});
 resume.addEventListener("click", function(){newWindow("https://wikipedia.org")});
 projects.addEventListener("click", function(){newWindow("https://wikipedia.org")});
 

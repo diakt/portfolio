@@ -1,4 +1,4 @@
-//event listeners
+//footer! footer!
 
 //footer DOM objects
 const gitHubLogo = document.getElementById("github-logo");
