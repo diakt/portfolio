@@ -86,6 +86,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    padding-bottom: 25vh;
     
     max-width: 100%;
     margin-bottom: 5vh;
@@ -124,9 +125,13 @@ main {
 
 
 .mid-child {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     width: 60%;
     font-size: 16px;
+    padding-bottom: 40vh;
 
     
 
@@ -138,10 +143,7 @@ main {
 }
 
 
-.mid-child .innertext {
-    margin: 2%;
 
-}
 
 
 

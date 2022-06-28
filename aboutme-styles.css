@@ -89,6 +89,7 @@ main {
     
     max-width: 100%;
     margin-bottom: 5vh;
+    padding-bottom: 10vh;
 
     border: black;
     /* border: blue; */
@@ -117,6 +118,7 @@ main {
     background-color: #88BB88;
     border-bottom-left-radius: 1vh;
     border-bottom-right-radius: 1vh;
+    /* padding-bottom:10vh; */
 }
 
 
@@ -127,6 +129,8 @@ main {
     display: inline-block;
     width: 60%;
     font-size: 16px;
+    height: auto;
+
 
     
 
@@ -138,7 +142,7 @@ main {
 }
 
 
-.mid-child .innertext {
+.mid-child .inner-text {
     margin: 2%;
 
 }
@@ -157,6 +161,7 @@ main {
     height: 70vh;
     /* flex-shrink: 2; */
     font-size: 14px;
+    
 }
 
 .left-child ul, .right-child ul {
@@ -200,6 +205,7 @@ main {
     max-width: 90%;
     text-align: left;
     margin-top: 1vh;
+    
 
 
     
@@ -362,9 +368,13 @@ footer{
     }
     .thin-image {
         display: block;
+        margin-top: 2vh;
         width: 90%;
-    
-
+        border:2px black;
+        border-style: solid;
+    }
+    .mid-child .inner-text {
+        width: 80%;
     }
   
     .footer-directory-icons {
