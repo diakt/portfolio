@@ -7,69 +7,58 @@
     <link rel="stylesheet" href="interests-styles.css">
     <title>Interests</title>
 </head>
+
 <body>
     <header>
         <nav>
             <a class="directory-item" href= "home.html" id="directory-item-my-name">Gavin Southerland</a>
-            <a class = "directory-item" href= "aboutme.html" id = "directory-item-aboutme">About me</a>
+            <a class = "directory-item" href= "aboutme.html" id = "directory-item-aboutme">About/Contact</a>
             <a class = "directory-item" href= "interests.html" id = "directory-item-interests">Interests</a>
             <a class = "directory-item" href= "projects.html" id = "directory-item-projects">Projects</a>
             <a class = "directory-item" target = "_blank" href= "https://drive.google.com/file/d/1l0iC3prYQL5YyKeUDYWLwUfF0c0o9-5k/view?usp=sharing" id = "directory-item-resume">Resume</a>
         </nav>
         
     </header>
-
-
-
-
-
-    <div class = "image-separator">
-        <!-- <img class = "trans-image" id = "Biking" alt="Biking" src="/images/IMG_5512 copy.jpg"> -->
-        <!-- <img class = "trans-image" id = "Winning "alt="Crewball senior year" src="/images/crewball-senior copy 2.jpeg" > -->
-        
-    </div>
     
-
-
-
-
-
     <main>
         <div class = "mid-child">
-            <h3 class = "interests-title">Maybe if I wasn't such a layabout, I'd have more to show you.</h2>
-            <p>Check back soon.</p>
-                <!-- <ul class = "interests-list"> 
-                <li class = "interests-item">Dingo</li>
-                <li class = "interests-item">Dingo</li>
-                <li class = "interests-item">Dingo</li>
-                <li class = "interests-item">Dingo</li>
-                <li class = "interests-item">Dingo</li>
-                <li class = "interests-item">Dingo</li>
-                <li class = "interests-item">Dingo</li>
-                <li class = "interests-item">Dingo</li>
-                <li class = "interests-item">Dingo</li>
-                <li class = "interests-item">Dingo</li>
-                <li class = "interests-item">Dingo</li>
-                <li class = "interests-item">Dingo</li>
-                
-                
-            </ul> -->
+            <h2 class = "interests-title">Personal interests</h2>
+            <ul class = "interests-list"> <!-- UL'd articles mostly for flexbox reasons-->
+                    <article class="interest-class">
+                        <img class = "interest-image" src="images/chopper-burn-norcal.jpg" alt="A slithery little friend">
+                        <!-- <img class = "interest-image" src="images/biking-ovie-main.jpg" alt="A slithery little friend"> -->
+                        <div class = "encapsulation">
+                            <p class = "interest-text">I’m interested in environmental hazards and risk management. Wildfire will worsen by several orders of magnitude over the next fifty years in the Pacific Northwest and Russia. I enjoy using statistical approaches in combination with significant assumption hunting to examine risk in maybe a systems theoretic context, and this passion has developed in tandem with my love for mathematics and computer science.</p>
+                        </div>
+                    </article>
+
+                    <article class="interest-class">
+                        <img class = "interest-image" src="images/mpb.jpg" alt="A mountain pine beetle">
+                        <div class = "encapsulation">
+                            <p class = "interest-text">I specifically find bark beetles really interesting. The term bark beetle isn't a classification as much as a four-letter word for any of a class of ~6,000 insects that predate trees. They're currently blamed for exacerbating wildfires in the west by killing trees, mostly pine, spruce, and fir, and there appears to be almost no real evidence that bark beetles actually make fire risk or fire intensity worse.</p>
+                        </div>
+                    </article>
+
+                    <article class="interest-class">
+                        <img class = "interest-image" src="images/crewball-senior copy.jpeg" alt="A slithery little friend">
+                        <div class = "encapsulation">
+                            <p class = "interest-text">Brief interest highlight</p>
+                        </div>
+                    </article>
+
+                    <article class="interest-class">
+                        <img class = "interest-image" src="images/crewball-senior copy.jpeg" alt="A slithery little friend">
+                        <div class = "encapsulation">
+                            <p class = "interest-text">Brief interest highlight</p>
+                        </div>
+                    </article>
+
+            </ul>
         </div>        
     </main>    
 
-
-
-
-
-
-
-
-
     <footer>
-       
-        
-        
-        <ul class = "footer-directory-icons">
+        <ul class = "footer-directory-icons"> <!-- This should be a navbar. More to come.-->
             <img class = "footer-directory-image"src="/logos/github.png" id = "github-logo"alt = "GitHub logo. Click to see my GitHub account."></li>
             <img class = "footer-directory-image"src="/logos/linkedin3.png" id = "linkedin-logo"alt ="LinkedIn logo. Click to see my LinkedIn. Yuck."></li>
             <img class = "footer-directory-image"src="/logos/twitter3.png" id = "twitter-logo"alt = "Twitter logo. Click to see math memes."></li>
@@ -78,10 +67,6 @@
         </ul>        
     </footer>
 
-
-
-
-
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Script essentially vestigial, solely manages footer. Would be nonvestigial if I just used a navbar again -->
 </body>
 </html>

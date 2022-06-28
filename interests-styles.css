@@ -95,11 +95,6 @@ main {
     /* border: blue; */
     border-style: solid;
 
-
-    /* background-color: #b2cacc; */
-    /* background-color: #549966; */
-    /* background-color: #996A84; */
-    /* background-color: #006E63; */
     background-color: #549FA2;
     
     
@@ -110,12 +105,8 @@ main {
 
 .mid-child, #encapsulation{ /* color only */
     /* background-color: #E6C59C; */
-    /* background-color: #b2cacc; */
-    /* background-color: #BAEEBA; */
-    /* background-color: #766688; */
-    /* background-color: #b2cacc; */
-    /* background-color: #549966; */
-    background-color: #88BB88;
+    /* background-color: #88BB88; */
+    background-color: white;
     border-bottom-left-radius: 1vh;
     border-bottom-right-radius: 1vh;
 }
@@ -127,21 +118,89 @@ main {
 .mid-child {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 100%;
     font-size: 16px;
-    padding-bottom: 40vh;
+    padding-bottom: 20vh;
 
+    /* border: black;
+    border-style: solid; */
+    margin: 1vh;
+    background-color: #549FA2;
+}
+
+.interests-title {
+    margin-top: 1vh;
+    margin-bottom: 0;
     
 
+}
+
+.interests-list {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+    /* border: blue;
+    border-style: solid; */
+    margin-top: 2vh;
+    padding: 0;
+
+    
+}
+
+.interest-class { /* encapsulates an image and a caption */
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2vh;
+    margin: 2vh 1vw;
+
+   background-color: #113343;
+    
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+
+    /* border: black;
+    border-style: solid; */
+}
+
+.interest-image {
+    width: 90%;
+    margin-top: 1vh;
+    margin-bottom: 0vh;
+    
+
+    /* border: black;
+    border-style: solid; */
+    
+}
+
+.encapsulation {
+    width: 90%;
+    margin-top: 1vh;
+    margin-bottom: 0vh;
+}
+
+
+.interest-text {
+    background-color: white;
+    padding: 1vh;
+    margin-top: 0vh;
+    margin-bottom: 1vh;
     border: black;
     border-style: solid;
 
-    /* height: 102.7vh; */
-    margin: 1vh;
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+    
 }
-
 
 
 
@@ -350,6 +409,14 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .interests-list {
+        flex-direction: column;
+    }
+
+    .interest-class { /* encapsulates an image and a caption */
+        width: 100%;
     }
 
     .footer-directory-icons {
